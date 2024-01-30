@@ -1,0 +1,14 @@
+Script started on Tue Jan 30 07:54:16 2024
+[1m[7m%[27m[1m[0m                                                                                ]2;aljazkovac@Aljazs-MBP:~/Desktop/github-all-projects/part12-containers-applications]1;..-applications]7;file://Aljazs-MBP/Users/aljazkovac/Desktop/github-all-projects/part12-containers-applications\[0m[27m[24m[J[01;32m➜  [36mpart12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004h[7mdocker container run -it ubuntu b[7ma[7msh[27m[K[A[44C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu[27m [27mba[27ms[27mh[?1l>[?2004l
+]2;docker container run -it ubuntu bash]1;dockerUnable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kce9ebea987c2: Pulling fs layer [1B[1A[2Kce9ebea987c2: Downloading    285kB/27.36MB[1B[1A[2Kce9ebea987c2: Downloading  6.155MB/27.36MB[1B[1A[2Kce9ebea987c2: Downloading  12.84MB/27.36MB[1B[1A[2Kce9ebea987c2: Downloading  18.42MB/27.36MB[1B[1A[2Kce9ebea987c2: Downloading  24.56MB/27.36MB[1B[1A[2Kce9ebea987c2: Verifying Checksum [1B[1A[2Kce9ebea987c2: Download complete [1B[1A[2Kce9ebea987c2: Extracting  294.9kB/27.36MB[1B[1A[2Kce9ebea987c2: Extracting  7.078MB/27.36MB[1B[1A[2Kce9ebea987c2: Extracting  12.68MB/27.36MB[1B[1A[2Kce9ebea987c2: Extracting  22.41MB/27.36MB[1B[1A[2Kce9ebea987c2: Extracting   23.3MB/27.36MB[1B[1A[2Kce9ebea987c2: Extracting  25.95MB/27.36MB[1B[1A[2Kce9ebea987c2: Extracting  27.13MB/27.36MB[1B[1A[2Kce9ebea987c2: Extracting  27.36MB/27.36MB[1B[1A[2Kce9ebea987c2: Pull complete [1BDigest: sha256:e6173d4dc55e76b87c4af8db8821b1feae4146dd47341e4d431118c7dd060a74
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@a85ed72983b5: /root@a85ed72983b5:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@a85ed72983b5: /root@a85ed72983b5:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@a85ed72983b5: /root@a85ed72983b5:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]2;aljazkovac@Aljazs-MBP:~/Desktop/github-all-projects/part12-containers-applications]1;..-applications]7;file://Aljazs-MBP/Users/aljazkovac/Desktop/github-all-projects/part12-containers-applications\[0m[27m[24m[J[01;32m➜  [36mpart12-containers-applications[00m [01;34mgit:([31mmain[34m) [33m✗[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Tue Jan 30 07:55:04 2024
