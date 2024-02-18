@@ -39,3 +39,10 @@
 /todo-app/todo-backend/mongo_data/journal/WiredTigerLog.0000000006
 /todo-app/todo-backend/mongo_data/journal/WiredTigerPreplog.0000000001
 /todo-app/todo-backend/mongo_data/journal/WiredTigerPreplog.0000000002
+/todo-app/todo-backend/mongo_data/.mongodb/mongosh/65d0f7c2514ccf15f6a13fba_log
+/todo-app/todo-backend/mongo_data/.mongodb/mongosh/65d0f800e75741238d13fbc8_log
+/todo-app/todo-backend/mongo_data/.mongodb/mongosh/65d1c23cc63d032d66ac3d1e_log
+/todo-app/todo-backend/mongo_data/.mongodb/mongosh/65d1c26429dfe00ed69cc221_log
+/todo-app/todo-backend/mongo_data/.mongodb/mongosh/snippets/index.bson.br
+/todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-14T11-23-40Z-00000
+/todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-17T03-51-24Z-00000
