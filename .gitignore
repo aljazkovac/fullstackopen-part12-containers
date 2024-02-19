@@ -45,3 +45,8 @@
 /todo-app/todo-backend/mongo_data/.mongodb/mongosh/snippets/index.bson.br
 /todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-14T11-23-40Z-00000
 /todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-17T03-51-24Z-00000
+/todo-app/todo-backend/mongo_data/.mongodb/mongosh/65d3a8c31a2ffc680a8dd185_log
+/todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-19T18-58-21Z-00000
+/todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-19T19-21-17Z-00000
+/todo-app/todo-backend/mongo_data/journal/WiredTigerLog.0000000002
+/todo-app/todo-backend/redis_data/dump.rdb
