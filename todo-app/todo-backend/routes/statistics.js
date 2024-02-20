@@ -8,7 +8,7 @@ const {getAsync} = require("../redis");
 
 /* GET statistics data. */
 router.get('/', async (req, res) => {
-    let counter = await getAsync("counter") ?? 0;
+    let counter = await getAsync("counter") ?? "0";
 
     res.send({
         ...configs,
