@@ -50,3 +50,10 @@
 /todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-19T19-21-17Z-00000
 /todo-app/todo-backend/mongo_data/journal/WiredTigerLog.0000000002
 /todo-app/todo-backend/redis_data/dump.rdb
+/todo-app/todo-backend/redis_data/appendonlydir/appendonly.aof.1.base.rdb
+/todo-app/todo-backend/redis_data/appendonlydir/appendonly.aof.1.incr.aof
+/todo-app/todo-backend/redis_data/appendonlydir/appendonly.aof.manifest
+/todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-20T14-08-48Z-00000
+/todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-20T14-11-40Z-00000
+/todo-app/todo-backend/mongo_data/diagnostic.data/metrics.2024-02-20T14-13-21Z-00000
+/todo-app/todo-backend/mongo_data/journal/WiredTigerLog.0000000005
