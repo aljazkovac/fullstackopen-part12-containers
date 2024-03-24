@@ -1,8 +1,11 @@
+# Specifies the version of the Docker compose file format.
 version: '3.8'
 
+# Defines the services (containers).
 services:
   mongo:
     image: mongo
+    # Map port on the host to port inside the container.
     ports:
       - 3456:27017
     environment:
@@ -10,13 +13,19 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_DATABASE: the_database
     volumes:
+      # Mounts a MongoDB initialization script.
       - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      # Persists MongoDB data by mapping a directory on the host to the MongoDB data directory inside the container.
       - ./mongo_data:/data/db
   redis:
     image: redis:latest
     ports:
+      # Map port on the host to port inside the container.
       - 6379:6379
-    command: ['redis-server', '--appendonly', 'yes'] # Overwrite the CMD
+    # Overwrites the default CMD to start Redis with append-only mode enabled (provides durability by logging every
+    # write operation to disk.
+    command: ['redis-server', '--appendonly', 'yes'] 
+    # Persists Redis data by mapping a directory on the host to the Redis data directory inside the container.
     volumes:
       - ./redis_data:/data
   server:
@@ -25,6 +34,8 @@ services:
       dockerfile: dev.Dockerfile
     ports:
       - "3000:3000"
+    # Mounts the current directory on the host to the given directory inside the container. This allows for real-time 
+    # code changes without rebuilding the container.
     volumes:
       - .:/usr/src/app
     environment:
