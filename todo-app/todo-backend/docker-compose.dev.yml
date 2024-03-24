@@ -19,6 +19,21 @@ services:
     command: ['redis-server', '--appendonly', 'yes'] # Overwrite the CMD
     volumes:
       - ./redis_data:/data
+  server:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - MONGO_URL=mongodb://root:example@mongo:3456/the_database
+    depends_on:
+      - mongo
+      - redis
         
 volumes:
   mongo_data:
+  redis_data: 
