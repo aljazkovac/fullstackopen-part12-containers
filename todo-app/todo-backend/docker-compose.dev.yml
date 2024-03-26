@@ -7,11 +7,7 @@ services:
     image: mongo
     # Map port on the host to port inside the container.
     ports:
-      - 3456:27017
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
-      MONGO_INITDB_DATABASE: the_database
+      - "3456:27017"
     volumes:
       # Mounts a MongoDB initialization script.
       - ./mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
@@ -21,7 +17,7 @@ services:
     image: redis:latest
     ports:
       # Map port on the host to port inside the container.
-      - 6379:6379
+      - "6379:6379"
     # Overwrites the default CMD to start Redis with append-only mode enabled (provides durability by logging every
     # write operation to disk.
     command: ['redis-server', '--appendonly', 'yes'] 
@@ -40,7 +36,7 @@ services:
       - .:/usr/src/app
     environment:
       - REDIS_URL=redis://redis:6379
-      - MONGO_URL=mongodb://root:example@mongo:3456/the_database
+      - MONGO_URL=mongodb://the_username:the_password@mongo:27017/the_database
     depends_on:
       - mongo
       - redis
