@@ -23,7 +23,7 @@ services:
       - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 8080:80
-    container_name: reverse-proxy
+    container_name: patientor-reverse-proxy
     depends_on:
       - app
       - server

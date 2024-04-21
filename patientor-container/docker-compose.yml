@@ -4,26 +4,20 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    environment:
-      - REACT_APP_API_BASE_URL=http://localhost:3001/api
-    volumes:
-      - ./frontend:/usr/src/app
     container_name: patientor-frontend-prod
   server:
     image: patientor-backend-prod
     build:
       context: ./backend
-      dockerfile: dev.Dockerfile
-    volumes:
-      - ./backend:/usr/src/app
+      dockerfile: Dockerfile
     container_name: patientor-backend-prod
   nginx:
     image: nginx:1.20.1
     volumes:
-      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - 8080:80
-    container_name: reverse-proxy-prod
+    container_name: patientor-reverse-proxy-prod
     depends_on:
       - app
       - server

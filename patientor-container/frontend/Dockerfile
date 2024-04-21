@@ -15,7 +15,7 @@ COPY . .
 # Build stage
 FROM base-stage AS build-stage
 
-# ENV REACT_APP_API_BASE_URL=http://localhost:3001/api/
+ENV REACT_APP_API_BASE_URL=http://localhost:8080/api
 RUN npm run build
 
 # Production stage
